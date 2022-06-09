@@ -21,13 +21,6 @@ function  modalIn(event){
     return;
   };
   const instance = basicLightbox.create(`
-    <div class="modal">
-        <p>
-            <img class="gallery__image" src="${event.target.dataset.source}">
-        </p>
-    </div>
-`);
+            <img class="gallery__image" src="${event.target.dataset.source}">`);
   instance.show()
-  const modalEl = document.querySelector('.basicLightbox');
-  modalEl.addEventListener('click', ()=> modalEl.remove());
 };
